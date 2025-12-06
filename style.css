@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --brown: rgb(156, 125, 84);
+  --blue-dark: #1f3d6b;
+  --font: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: -1%;
+}
+#header {
+  background-color: var(--blue-dark);
+}
+#icon-header {
+  color: var(--brown);
+}
+#header-text {
+  color: rgba(255, 255, 255, 0.753);
+}
+#header-links {
+  margin-left: 10%;
+}
+#header-links a {
+  color: var(--brown);
+  width: 10%;
+  border-radius: 100%;
+  border: 1px solid white;
+  padding: 4px;
+  transition: color 0.7s ease;
+}
+#header-links a:hover {
+  color: azure;
+}
+#header-links-2 a {
+  text-decoration: none;
+  transition: color 0.7s ease;
+  color: rgba(255, 255, 255, 0.45);
+}
+#header-links-2 a:hover {
+  color: azure;
+}
+.navbar-brand {
+  margin-left: 2%;
+}
+#navbar {
+  margin-left: 45%;
+}
+#name {
+  font-size: 3vw;
+  font-family: var(--font);
+  margin-left: -1%;
+  color: var(--brown);
+}
+#navlinks {
+  color: var(--blue-dark);
+}
+#search {
+  background-color: var(--brown);
+  color: white;
+  padding: 3px;
+  font-size: 1.3vw;
+  border-radius: 100%;
+  outline: none;
+  border: none;
+  width: 4%;
+  height: 6vh;
+  margin-left: 1%;
+}
+#qoute {
+  width: 13%;
+  border-radius: 9999px;
+  background-color: var(--brown);
+  color: white;
+  outline: none;
+  border: none;
+  padding: 5px;
+  margin-left: 1%;
+}
+
+/* responsive-header */
+@media screen and (max-width: 576px) {
+  #header {
+    display: none;
+  }
+  .navbar-brand {
+    margin-left: -5%;
+    width: 10px;
+  }
+  #name {
+    font-size: 6.5vw;
+    margin-left: 17%;
+  }
+  #search {
+    display: none;
+  }
+  #qoute {
+    display: none;
+  }
+  .navbar-toggler {
+    float: right;
+    margin-left: 35%;
+  }
+}
+
+.page-one h6 {
+  margin-top: 8%;
+}
+.page-one h1 {
+  font-size: 5vw;
+  width: 60%;
+  text-align: center;
+  justify-self: center;
+  font-family: var(--font);
+  margin-top: 3%;
+}
+.page-one p {
+  width: 80%;
+  text-align: center;
+  font-size: 1.3vw;
+  justify-self: center;
+  margin-top: 3%;
+  font-weight: normal;
+}
