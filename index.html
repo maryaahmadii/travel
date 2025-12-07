@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -137,19 +139,75 @@
     <!-- page one detailes -->
     <div class="container-fluid page-one">
       <div class="row">
-        <div class="col-sm-12">
-          <h6 class="d-flex justify-content-center">
-            SOLUTION FOR ALL TYPE OF VISAS
-          </h6>
-          <h1>immigration Process Starts Here!</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
-            enim iste eveniet porro. In eum sequi error veniam qui soluta
-            blanditiis fuga perferendis deleniti ut! Accusamus nisi dicta
-            eligendi a?
-          </p>
+        <div class="col-sm-12 p-0">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="picture/air-port2.jpg" alt="air-port" />
+              </div>
+
+              <div class="carousel-item">
+                <img src="picture/3.jpg" alt="air palne" />
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+            <div id="details">
+              <h6
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                class="d-flex justify-content-center"
+              >
+                SOLUTION FOR ALL TYPE OF VISAS
+              </h6>
+              <h1
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
+                immigration Process Starts Here!
+              </h1>
+              <p data-aos="fade-up" data-aos-duration="3000">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tenetur enim iste eveniet porro. In eum sequi error veniam qui
+                soluta blanditiis fuga perferendis deleniti ut! Accusamus nisi
+                dicta eligendi a?
+              </p>
+              <button
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                class="btn d-flex justify-content-center"
+              >
+                More Details
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- page 2 -->
+    <div class="container-fluid page-two">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6">uefy</div>
+      </div>
+    </div>
+    <!-- anima -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
