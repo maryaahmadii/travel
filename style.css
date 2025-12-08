@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background-image: url(picture/map.jpg);
+  background-size: 100% 700vh;
+  background-repeat: no-repeat;
+}
 :root {
   --brown: rgb(156, 125, 84);
   --blue-dark: #1f3d6b;
@@ -259,6 +264,7 @@
 .experience i {
   font-size: 5.5vw;
   color: var(--blue-dark);
+  margin-top: 8%;
 }
 #years-of-Experience {
   font-size: 3vw;
@@ -384,8 +390,8 @@
   }
   #offers span {
     font-size: 3vw;
-    margin-left: 10%;
-    margin-top: -7.5%;
+    margin-left: 14%;
+    margin-top: -9.5%;
   }
   .quastion-div {
     margin-top: 5%;
@@ -398,8 +404,8 @@
   }
   #msg-icon {
     font-size: 3.5vw;
-    margin-top: -11%;
-    margin-left: 22%;
+    margin-top: -13%;
+    margin-left: 21%;
     position: absolute;
   }
   #question {
@@ -419,5 +425,94 @@
     font-size: 2.5vw;
     margin-left: 30% !important;
     float: left;
+  }
+}
+/* page 3 */
+.page-three {
+  width: 100%;
+  height: 60vh;
+  background-color: rgba(245, 245, 245, 0.623);
+}
+
+.categories,
+.team-mmbr,
+.visa-process,
+.rates {
+  width: 75%;
+  height: 40vh;
+  margin-left: 15%;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  margin-top: 25%;
+}
+.categories div,
+.team-mmbr div,
+.visa-process div,
+.rates div {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--blue-dark);
+}
+.categories P,
+.team-mmbr p,
+.visa-process p,
+.rates p {
+  justify-self: center;
+  color: var(--blue-dark);
+  font-weight: bold;
+  margin-top: 8%;
+  letter-spacing: 1.5px;
+}
+.categories b,
+.team-mmbr b,
+.visa-process b,
+.rates b {
+  display: block;
+  justify-self: center;
+  color: var(--brown);
+  font-size: 2.5vw;
+  margin-top: -8%;
+}
+/* responsive page 2 */
+@media screen and (max-width: 567px) {
+  .page-three {
+    width: 100%;
+    height: auto;
+    padding: 10%;
+  }
+
+  .categories,
+  .team-mmbr,
+  .visa-process,
+  .rates {
+    width: 70%;
+    height: 35vh;
+    margin-left: 15%;
+  }
+  .categories div,
+  .team-mmbr div,
+  .visa-process div,
+  .rates div {
+    height: 15vh;
+  }
+  .categories P,
+  .team-mmbr p,
+  .visa-process p,
+  .rates p {
+    font-size: 5.2vw;
+  }
+  .categories b,
+  .team-mmbr b,
+  .visa-process b,
+  .rates b {
+    font-size: 10.5vw;
+    margin-top: -5%;
   }
 }
