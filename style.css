@@ -102,6 +102,7 @@
     margin-left: 35%;
   }
 }
+
 .page-one h6 {
   margin-top: 8%;
   color: white;
@@ -179,6 +180,244 @@
 /* page-two */
 .page-two {
   width: 100%;
+  height: 105vh;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+.page-2-pics {
+  width: 80%;
+  height: 80vh;
+  background-color: gainsboro;
+  border-radius: 20px;
+}
+#img1-page2 {
+  width: 100%;
+  height: 60vh;
+  margin-top: 28%;
+}
+#img2-page2 {
+  margin-top: -163%;
+  margin-left: 15%;
+  width: 90%;
+}
+.about-page2 {
   height: 100vh;
-  background-color: black;
+  padding: 70px;
+}
+.about-page2 h6,
+.about-page2 h2 {
+  color: var(--blue-dark);
+}
+.about-page2 h2 {
+  font-family: var(--font);
+  margin-top: 3%;
+  font-size: 3.2vw;
+}
+.about-page2 span {
+  display: block;
+  margin-top: -6%;
+  margin-left: 35%;
+  font-size: 2vw;
+}
+#first-line {
+  margin-top: -11%;
+  color: var(--blue-dark);
+}
+#second-line {
+  color: var(--brown);
+}
+.about-page2 p {
+  color: gray;
+  margin-top: 6%;
+}
+.icons-page2 {
+  display: flex;
+  width: 100%;
+}
+.icons-page2 i {
+  font-size: 3.5vw;
+  color: var(--brown);
+}
+.icons-page2 span {
+  display: inline-block;
+  width: 80%;
+  color: var(--blue-dark);
+  font-size: 1.2vw;
+  font-weight: bold;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+.experience {
+  width: 90%;
+  height: 30vh;
+  background-color: gainsboro;
+  margin-top: 10%;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+}
+.experience i {
+  font-size: 5.5vw;
+  color: var(--blue-dark);
+}
+#years-of-Experience {
+  font-size: 3vw;
+  margin-top: -10% !important;
+  font-weight: bold;
+  color: var(--blue-dark);
+}
+.experience p {
+  margin-top: -11%;
+}
+#offers {
+  margin-left: -10%;
+  margin-top: 7%;
+}
+#offers i {
+  font-size: 1vw;
+  color: var(--brown);
+  margin-top: 3%;
+}
+#offers span {
+  font-size: 1vw;
+  margin-left: 6%;
+  margin-top: -6.5%;
+  color: var(--blue-dark);
+  font-weight: bold;
+}
+#phone-icon {
+  font-size: 5vw;
+  position: relative;
+  color: var(--blue-dark);
+  margin-left: -12%;
+  margin-top: 4%;
+}
+#msg-icon {
+  display: block;
+  position: absolute;
+  float: left;
+  font-size: 1.5vw;
+  color: var(--brown);
+  margin-top: -17%;
+  margin-left: 2%;
+}
+#question {
+  margin-top: -60px !important;
+  color: var(--blue-dark);
+  font-weight: bold;
+}
+#question2 {
+  margin-top: -20px;
+  margin-left: 45px;
+  color: var(--brown);
+  font-weight: bold;
+}
+/* responsive page 2 */
+
+@media screen and (max-width: 576px) {
+  .page-two {
+    width: 100%;
+    height: auto;
+  }
+  .page-2-pics {
+    width: 80%;
+    height: 50vh;
+    margin-top: 5%;
+  }
+  #img1-page2 {
+    width: 100%;
+    height: 30vh;
+    margin-top: 49%;
+  }
+  #img2-page2 {
+    margin-top: -183%;
+    height: 30vh;
+  }
+
+  .about-page2 h6 {
+    font-size: 3.2vw;
+  }
+  .about-page2 h2 {
+    margin-top: 7%;
+    font-size: 5.2vw;
+  }
+  .about-page2 span {
+    display: block;
+    margin-top: -6%;
+    margin-left: 53%;
+    font-size: 2vw;
+  }
+  .about-page2 p {
+    font-size: 2vw;
+  }
+  .icons-page2 i {
+    font-size: 5.5vw;
+    margin-top: 2%;
+  }
+  .icons-page2 span {
+    font-size: 3.2vw;
+    margin-left: 2%;
+    margin-top: 1%;
+  }
+  .experience {
+    width: 80%;
+    height: 27vh;
+    margin-left: 7%;
+  }
+  .experience i {
+    font-size: 25.5vw;
+    margin-top: 2%;
+  }
+  #years-of-Experience {
+    font-size: 10vw;
+  }
+  .experience p {
+    font-size: 5vw;
+  }
+  #offers {
+    margin-left: 10%;
+    margin-top: 7%;
+  }
+  #offers i {
+    font-size: 5vw;
+    margin-top: 4%;
+  }
+  #offers span {
+    font-size: 3vw;
+    margin-left: 10%;
+    margin-top: -7.5%;
+  }
+  .quastion-div {
+    margin-top: 5%;
+  }
+  #phone-icon {
+    font-size: 9vw;
+    margin-left: 15%;
+    margin-top: 4%;
+    position: relative;
+  }
+  #msg-icon {
+    font-size: 3.5vw;
+    margin-top: -11%;
+    margin-left: 22%;
+    position: absolute;
+  }
+  #question {
+    margin-top: -35px !important;
+    color: var(--blue-dark);
+    position: absolute;
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin-left: 30% !important;
+    float: left;
+  }
+  #question2 {
+    margin-top: -30x !important;
+    color: var(--blue-dark);
+    position: absolute;
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin-left: 30% !important;
+    float: left;
+  }
 }
