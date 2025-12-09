@@ -3,8 +3,9 @@
 }
 body {
   background-image: url(picture/map.jpg);
-  background-size: 100% 700vh;
+  background-size: 100% 200vh;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 :root {
   --brown: rgb(156, 125, 84);
@@ -447,10 +448,7 @@ body {
   border-bottom-right-radius: 100%;
   margin-top: 25%;
 }
-.categories div,
-.team-mmbr div,
-.visa-process div,
-.rates div {
+#blue-div {
   width: 100%;
   height: 20vh;
   display: flex;
@@ -458,6 +456,43 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: var(--blue-dark);
+}
+.icon-div-page2 {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  height: 18vh;
+  background-color: #08316d8b;
+  display: flex;
+  justify-content: center;
+  margin-top: -5%;
+  clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.icon-div-page2::before {
+  content: "";
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 16.5vh;
+  clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  background-color: #2f62af46;
+}
+
+.icon-div-page2 i {
+  font-size: 4.5vw;
+  margin-top: 12%;
+  color: var(--brown);
+  transition: transform 0.6s ease;
+  z-index: 1;
+}
+.categories:hover .icon-div-page2 i,
+.team-mmbr:hover .icon-div-page2 i,
+.visa-process:hover .icon-div-page2 i,
+.rates:hover .icon-div-page2 i {
+  transform: rotate(360deg);
 }
 .categories P,
 .team-mmbr p,
@@ -501,6 +536,16 @@ body {
   .rates div {
     height: 15vh;
   }
+  .icon-div-page2 {
+    width: 70%;
+    height: 40vh;
+  }
+  .icon-div-page2::before {
+    height: 38.5vh;
+  }
+  .icon-div-page2 i {
+    font-size: 19.5vw;
+  }
   .categories P,
   .team-mmbr p,
   .visa-process p,
@@ -515,3 +560,258 @@ body {
     margin-top: -5%;
   }
 }
+/* page4 */
+.page-four {
+  height: auto;
+  padding: 8%;
+  background-color: white;
+  overflow: hidden;
+}
+.details-page4 {
+  text-align: center;
+}
+.div1-page4 {
+  display: flex;
+  justify-content: center;
+}
+#first-line-right,
+#first-line-left {
+  color: var(--blue-dark);
+  font-weight: bolder;
+}
+#second-line-right,
+#second-line-left {
+  color: var(--brown);
+  font-weight: bolder;
+}
+.div1-page4 p {
+  color: var(--blue-dark);
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.details-page4 h2 {
+  font-size: 4.5vw;
+  width: 60%;
+  font-family: var(--font);
+  color: var(--blue-dark);
+  justify-self: center;
+}
+#page4-para {
+  color: gray;
+  margin-top: 4%;
+  width: 80%;
+  justify-self: center;
+}
+.div1-overlay,
+.div2-overlay,
+.div3-overlay,
+.div1-part2-overlay,
+.div2-part2-overlay,
+.div3-part2-overlay {
+  width: 100%;
+  height: 60vh;
+  background-size: 100% 60vh;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  margin-left: 2%;
+}
+.div1-overlay {
+  background-image: url(picture/pic1-page4.jpg);
+}
+.div2-overlay {
+  background-image: url(picture/pic-page4.jpg);
+}
+.div3-overlay {
+  background-image: url(picture/pic3page4.jpg);
+}
+.div1-part2-overlay {
+  background-image: url(picture/pic4page4.jpg);
+}
+.div2-part2-overlay {
+  background-image: url(picture/pic6page4.jpg);
+}
+.div3-part2-overlay {
+  background-image: url(picture/pic5page4.jpg);
+}
+.overlay {
+  background-color: rgba(245, 245, 245, 0.445);
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  transition: 1s ease;
+  overflow: hidden;
+}
+.div1-overlay:hover .overlay,
+.div2-overlay:hover .overlay,
+.div3-overlay:hover .overlay,
+.div1-part2-overlay:hover .overlay,
+.div2-part2-overlay:hover .overlay,
+.div3-part2-overlay:hover .overlay {
+  height: 60vh;
+  top: 0%;
+}
+.div1-1-overlay,
+.div2-2-overlay,
+.div3-3-overlay {
+  text-align: center;
+  width: 80%;
+  padding: 5%;
+  color: white;
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 78%;
+  justify-self: center;
+  transition: all 1s ease;
+  z-index: 1;
+}
+.div1-1-overlay h3,
+.div2-2-overlay h3,
+.div3-3-overlay h3 {
+  background-color: var(--blue-dark);
+  border-radius: 10px;
+  width: 100%;
+  padding-top: 3%;
+  font-family: var(--font);
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 1.5vw;
+  height: 8vh;
+}
+.div1-1-overlay hr,
+.div2-2-overlay hr,
+.div3-3-overlay hr {
+  display: none;
+}
+.div1-1-overlay p,
+.div2-2-overlay p,
+.div3-3-overlay p {
+  color: gray;
+  display: none;
+  margin-top: 8%;
+}
+.div1-1-overlay button,
+.div2-2-overlay button,
+.div3-3-overlay button {
+  background-color: rgb(234, 233, 233);
+  color: var(--brown);
+  padding: 3%;
+  width: 50%;
+  height: 8vh;
+  border-radius: 9999px;
+}
+.div1-overlay:hover .div1-1-overlay,
+.div2-overlay:hover .div2-2-overlay,
+.div3-overlay:hover .div3-3-overlay,
+.div1-part2-overlay:hover .div1-1-overlay,
+.div2-part2-overlay:hover .div2-2-overlay,
+.div3-part2-overlay:hover .div3-3-overlay {
+  height: 50vh;
+  background-color: #1f3d6b;
+  margin-top: 30%;
+}
+.div1-overlay:hover .div1-1-overlay hr,
+.div2-overlay:hover .div2-2-overlay hr,
+.div3-overlay:hover .div3-3-overlay hr,
+.div1-part2-overlay:hover .div1-1-overlay hr,
+.div2-part2-overlay:hover .div2-2-overlay hr,
+.div3-part2-overlay:hover .div3-3-overlay hr {
+  display: block;
+}
+.div1-overlay:hover .div1-1-overlay p,
+.div2-overlay:hover .div2-2-overlay p,
+.div3-overlay:hover .div3-3-overlay p,
+.div1-part2-overlay:hover .div1-1-overlay p,
+.div2-part2-overlay:hover .div2-2-overlay p,
+.div3-part2-overlay:hover .div3-3-overlay p {
+  display: block;
+}
+.div1-overlay:hover .div1-1-overlay button,
+.div2-overlay:hover .div2-2-overlay button,
+.div3-overlay:hover .div3-3-overlay button,
+.div1-part2-overlay:hover .div1-1-overlay button,
+.div2-part2-overlay:hover .div2-2-overlay button,
+.div3-part2-overlay:hover .div3-3-overlay button {
+  display: block;
+  background-color: var(--brown);
+  border-radius: 9999px;
+  color: white;
+  justify-self: center;
+}
+.part2-page4 {
+  margin-top: 10%;
+}
+/* responsive page4 */
+@media screen and (max-width: 576px) {
+  .page-four {
+    padding-bottom: 35%;
+    padding-top: 0;
+  }
+  .div1-page4 p {
+    font-size: 3vw;
+    margin-top: 4%;
+  }
+  .details-page4 h2 {
+    font-size: 6.5vw;
+    width: 90%;
+  }
+  #page4-para {
+    width: 90%;
+    font-size: 3vw;
+  }
+  .div1-overlay,
+  .div2-overlay,
+  .div3-overlay,
+  .div1-part2-overlay,
+  .div2-part2-overlay,
+  .div3-part2-overlay {
+    margin-top: 30%;
+  }
+  .div1-1-overlay,
+  .div2-2-overlay,
+  .div3-3-overlay {
+    margin-top: 53vh;
+  }
+  .div1-1-overlay h3,
+  .div2-2-overlay h3,
+  .div3-3-overlay h3 {
+    font-size: 4.5vw;
+    margin-top: 5%;
+    padding-top: 3%;
+    height: 6vh;
+  }
+  .div1-1-overlay button,
+  .div2-2-overlay button,
+  .div3-3-overlay button {
+    padding: 2%;
+    width: 60%;
+    height: 5vh;
+  }
+  .div1-overlay:hover .div1-1-overlay,
+  .div2-overlay:hover .div2-2-overlay,
+  .div3-overlay:hover .div3-3-overlay,
+  .div1-part2-overlay:hover .div1-1-overlay,
+  .div2-part2-overlay:hover .div2-2-overlay,
+  .div3-part2-overlay:hover .div3-3-overlay {
+    height: 40vh;
+    background-color: #1f3d6b;
+    margin-top: 60%;
+  }
+  .div1-overlay:hover .div1-1-overlay p,
+  .div2-overlay:hover .div2-2-overlay p,
+  .div3-overlay:hover .div3-3-overlay p,
+  .div1-part2-overlay:hover .div1-1-overlay p,
+  .div2-part2-overlay:hover .div2-2-overlay p,
+  .div3-part2-overlay:hover .div3-3-overlay p {
+    display: block;
+    font-size: 3.5vw;
+  }
+}
+/* page5 */
