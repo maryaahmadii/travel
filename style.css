@@ -13,7 +13,6 @@ body {
   --font: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
-  margin-left: -1%;
 }
 #header {
   background-color: var(--blue-dark);
@@ -49,9 +48,31 @@ body {
 .navbar-brand {
   margin-left: 2%;
 }
+
 #navbar {
   margin-left: 45%;
+  color: #1f3d6b;
 }
+.nav-link {
+  transition: 0.4s;
+  padding: 13px;
+  margin-top: 3%;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+}
+.nav-link:hover {
+  padding: 15px;
+  color: var(--blue-dark);
+  border-top: 2px solid var(--brown);
+  border-bottom: 2px solid var(--brown);
+}
+/* .nav-link:active {
+  padding: 15px;
+  color: var(--blue-dark);
+  border-top: 2px solid var(--brown);
+  border-bottom: 2px solid var(--brown);
+} */
+
 #name {
   font-size: 3vw;
   font-family: var(--font);
@@ -459,7 +480,6 @@ body {
 }
 .icon-div-page2 {
   position: relative;
-  z-index: 1;
   width: 50%;
   height: 18vh;
   background-color: #08316d8b;
@@ -567,10 +587,13 @@ body {
   background-color: white;
   overflow: hidden;
 }
-.details-page4 {
+.details-page4,
+.details-page5 {
   text-align: center;
 }
-.div1-page4 {
+.div1-page4,
+.div1-page5,
+.div1-page6 {
   display: flex;
   justify-content: center;
 }
@@ -584,7 +607,9 @@ body {
   color: var(--brown);
   font-weight: bolder;
 }
-.div1-page4 p {
+.div1-page4 p,
+.div1-page5 p,
+.div1-page6 p {
   color: var(--blue-dark);
   letter-spacing: 2px;
   font-weight: bold;
@@ -596,7 +621,9 @@ body {
   color: var(--blue-dark);
   justify-self: center;
 }
-#page4-para {
+#page4-para,
+#page5-para,
+#page6-para {
   color: gray;
   margin-top: 4%;
   width: 80%;
@@ -695,7 +722,7 @@ body {
 .div3-3-overlay p {
   color: gray;
   display: none;
-  margin-top: 8%;
+  margin-top: 0%;
 }
 .div1-1-overlay button,
 .div2-2-overlay button,
@@ -766,13 +793,17 @@ body {
     width: 90%;
     font-size: 3vw;
   }
-  .div1-overlay,
+
   .div2-overlay,
   .div3-overlay,
   .div1-part2-overlay,
   .div2-part2-overlay,
   .div3-part2-overlay {
-    margin-top: 30%;
+    margin-top: 15vh;
+    margin-left: 0;
+  }
+  .div1-overlay {
+    margin-top: 3vh;
   }
   .div1-1-overlay,
   .div2-2-overlay,
@@ -815,3 +846,299 @@ body {
   }
 }
 /* page5 */
+.page-five {
+  height: auto;
+  padding: 1%;
+  padding-top: 8%;
+  background-color: whitesmoke;
+  overflow: hidden;
+  padding-bottom: 4%;
+}
+.details-page5 h2 {
+  font-size: 4.5vw;
+  width: 80%;
+  font-family: var(--font);
+  color: var(--blue-dark);
+  justify-self: center;
+}
+.cost-effective,
+.visa-assistance,
+.faster-processing,
+.Direct-interviews {
+  width: 90%;
+  height: 57vh;
+  border-radius: 20px;
+  padding: 9%;
+  margin-left: 4%;
+  margin-top: 5%;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cost-effective {
+  margin-left: 10%;
+}
+.overlay-page5 {
+  background-color: #1f3d6b38;
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  top: 57vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  transition: 1s ease;
+  overflow: hidden;
+}
+.cost-effective:hover .overlay-page5,
+.visa-assistance:hover .overlay-page5,
+.faster-processing:hover .overlay-page5,
+.Direct-interviews:hover .overlay-page5 {
+  height: 57vh;
+  top: 0%;
+}
+#dolor-icon,
+#visa-icon,
+#processing-icon,
+#direct-icon {
+  width: 35%;
+  height: 14vh;
+  background-color: #1f3d6b40;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+}
+#dolor-icon i,
+#visa-icon i,
+#processing-icon i,
+#direct-icon i {
+  font-size: 4vw;
+  color: var(--blue-dark);
+  padding-top: 2.5vh;
+  transition: transform 0.5s ease;
+}
+.cost-effective:hover #dolor-icon i,
+.visa-assistance:hover #visa-icon i,
+.faster-processing:hover #processing-icon i,
+.Direct-interviews:hover #direct-icon i {
+  transform: rotate(360deg);
+  color: var(--brown);
+}
+.cost-effective h6,
+.visa-assistance h6,
+.faster-processing h6,
+.Direct-interviews h6 {
+  justify-self: center;
+  margin-top: 4vh;
+  color: var(--blue-dark);
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+.cost-effective p,
+.visa-assistance p,
+.faster-processing p,
+.Direct-interviews p {
+  justify-self: center;
+  margin-top: 4vh;
+  color: gray;
+}
+.cost-effective button,
+.visa-assistance button,
+.faster-processing button,
+.Direct-interviews button {
+  color: var(--brown);
+  font-weight: bold;
+}
+.cost-effective button:hover,
+.visa-assistance button:hover,
+.faster-processing button:hover,
+.Direct-interviews button:hover {
+  color: var(--blue-dark);
+}
+#btn-page5 {
+  justify-self: center !important;
+  background-color: var(--brown) !important;
+  color: white !important;
+  border-radius: 9999px !important;
+  margin-top: 2%;
+  width: 13%;
+  height: 8vh;
+  margin-left: 43%;
+  transition: background-color 0.8s ease;
+}
+#btn-page5:hover {
+  background-color: var(--blue-dark) !important;
+  color: white;
+}
+/* responsive-page5 */
+@media screen and (max-width: 576px) {
+  .details-page5 p {
+    font-size: 3vw;
+    margin-top: 4.5%;
+  }
+  .details-page5 h2 {
+    font-size: 5.5vw;
+    width: 90%;
+  }
+  .cost-effective,
+  .visa-assistance,
+  .faster-processing,
+  .Direct-interviews {
+    height: 47vh;
+    padding: 9%;
+    margin-left: 5%;
+  }
+
+  #dolor-icon,
+  #visa-icon,
+  #processing-icon,
+  #direct-icon {
+    width: 30%;
+    height: 10vh;
+  }
+  #dolor-icon i,
+  #visa-icon i,
+  #processing-icon i,
+  #direct-icon i {
+    font-size: 9.5vw;
+  }
+  .cost-effective h6,
+  .visa-assistance h6,
+  .faster-processing h6,
+  .Direct-interviews h6 {
+    margin-top: 2.5vh;
+    font-size: 4.5vw;
+  }
+  .cost-effective p,
+  .visa-assistance p,
+  .faster-processing p,
+  .Direct-interviews p {
+    margin-top: 3vh;
+    font-size: 4.5vw;
+  }
+  #btn-page5 {
+    margin-top: 5%;
+    width: 50%;
+    height: 6vh;
+    margin-left: 25%;
+  }
+}
+/* page6 */
+.page-six {
+  height: auto;
+  padding: 1%;
+  padding-top: 8%;
+  background-color: white;
+  overflow: hidden;
+}
+.details-page6 h2 {
+  font-size: 4.5vw;
+  width: 70%;
+  font-family: var(--font);
+  color: var(--blue-dark);
+  justify-self: center;
+  text-align: center;
+}
+.details-page6 p {
+  text-align: center;
+}
+.US,
+.UK,
+.U-arab,
+.turkey {
+  width: 80%;
+  height: 55vh;
+  background-size: 100% 55vh;
+  background-repeat: no-repeat;
+  margin-top: 8%;
+  margin-left: 4%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.US {
+  margin-left: 10%;
+  background-image: url(picture/united-state-place.jpg);
+}
+.UK {
+  background-image: url(picture/united-kingdom-place.jpg);
+}
+.U-arab {
+  background-image: url(picture/united-arab-place.jpg);
+}
+.turkey {
+  background-image: url(picture/turkey-place.jpg);
+}
+.US img,
+.UK img,
+.U-arab img,
+.turkey img {
+  width: 25%;
+  height: 10vh;
+  border-radius: 100%;
+  border: 2px solid white;
+  margin-top: -10%;
+  z-index: 1;
+  transition: transform 0.6s ease;
+}
+.overlay-page6 {
+  position: absolute;
+  background-color: #1f3d6b6f;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  top: 55vh;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  transition: 1s ease;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.overlay-page6 h4 {
+  padding-top: 70%;
+  color: white;
+  font-family: var(--font);
+  text-shadow: 1px 5px 0px var(--brown), -1px -5px 0px var(--blue-dark);
+}
+.US:hover .overlay-page6,
+.UK:hover .overlay-page6,
+.U-arab:hover .overlay-page6,
+.turkey:hover .overlay-page6 {
+  height: 55vh;
+  top: 0;
+}
+.US:hover #us-img,
+.UK:hover #uk-img,
+.U-arab:hover #u-arab-img,
+.turkey:hover #turkey-img {
+  transform: rotate(360deg);
+}
+/* responsive page6 */
+@media screen and (max-width: 576px) {
+  .details-page6 p {
+    font-size: 3vw;
+    margin-top: 4.5%;
+    text-align: center;
+    margin-left: 1%;
+  }
+  .details-page6 h2 {
+    font-size: 5.5vw;
+    width: 90%;
+  }
+  .US,
+  .UK,
+  .U-arab,
+  .turkey {
+    margin-left: 10%;
+    margin-top: 7vh;
+  }
+}
+/* page7 */
