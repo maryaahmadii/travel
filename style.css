@@ -183,7 +183,7 @@ body {
   color: white;
 }
 /* responsive page 1 */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 776px) {
   .page-one h6 {
     margin-top: 65%;
     font-weight: normal;
@@ -193,15 +193,18 @@ body {
     font-size: 8vw;
     width: 80%;
     margin-top: 10%;
+    text-align: center;
   }
   .page-one p {
     width: 80%;
     font-size: 2.5vw;
     margin-top: 15%;
+    text-align: center;
   }
   #details button {
     width: 40%;
     margin-top: 3%;
+    text-align: center;
   }
 }
 /* page-two */
@@ -342,7 +345,7 @@ body {
 }
 /* responsive page 2 */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 776px) {
   .page-two {
     width: 100%;
     height: auto;
@@ -547,7 +550,7 @@ body {
   .visa-process,
   .rates {
     width: 70%;
-    height: 35vh;
+    height: 45vh;
     margin-left: 15%;
   }
   .categories div,
@@ -557,20 +560,20 @@ body {
     height: 15vh;
   }
   .icon-div-page2 {
-    width: 70%;
-    height: 40vh;
+    width: 40%;
   }
   .icon-div-page2::before {
-    height: 38.5vh;
+    width: 100%;
   }
   .icon-div-page2 i {
-    font-size: 19.5vw;
+    font-size: 15.5vw;
   }
   .categories P,
   .team-mmbr p,
   .visa-process p,
   .rates p {
     font-size: 5.2vw;
+    text-align: center;
   }
   .categories b,
   .team-mmbr b,
@@ -578,6 +581,7 @@ body {
   .rates b {
     font-size: 10.5vw;
     margin-top: -5%;
+    text-align: center;
   }
 }
 /* page4 */
