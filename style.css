@@ -130,8 +130,6 @@ body {
   }
 }
 
-#details {
-}
 .page-one h6 {
   margin-top: 8%;
   color: white;
@@ -1387,6 +1385,8 @@ body {
   padding: 5%;
   height: auto;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 }
 #world-wide-ofices {
   margin-top: 7%;
@@ -1429,7 +1429,6 @@ body {
 @media screen and(max-width:776px) {
   #world-wide-ofices {
     width: 100%;
-    justify-self: center;
   }
 }
 /* footer */
