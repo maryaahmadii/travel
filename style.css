@@ -304,6 +304,7 @@ body {
   font-size: 3vw;
   margin-top: -10% !important;
   font-weight: bold;
+  font-family: var(--font);
   color: var(--blue-dark);
 }
 .experience p {
