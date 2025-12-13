@@ -130,16 +130,20 @@ body {
   }
 }
 
+#details {
+}
 .page-one h6 {
   margin-top: 8%;
   color: white;
   font-weight: bold;
+  display: flex;
   justify-self: center;
   text-shadow: 2px 2px 2px var(--blue-dark);
 }
 .page-one h1 {
   font-size: 6vw;
   width: 60%;
+  display: flex;
   text-align: center;
   justify-self: center;
   font-family: var(--font);
@@ -149,6 +153,7 @@ body {
 }
 .page-one p {
   width: 80%;
+  display: flex;
   text-align: center;
   font-size: 1.3vw;
   justify-self: center;
@@ -180,6 +185,7 @@ body {
   background-color: var(--brown);
   border-radius: 9999px;
   margin-top: 2%;
+  display: flex;
   font-weight: normal;
   color: white;
 }
@@ -189,24 +195,20 @@ body {
     margin-top: 65%;
     font-weight: normal;
     font-size: 3.5vw;
-    margin-left: 5%;
   }
   .page-one h1 {
     font-size: 8vw;
     width: 80%;
     margin-top: 10%;
-    margin-left: 2%;
   }
   .page-one p {
     width: 80%;
     font-size: 2.5vw;
     margin-top: 15%;
-    margin-left: 3%;
   }
   #details button {
     width: 40%;
     margin-top: 3%;
-    margin-left: 8%;
   }
 }
 /* page-two */
@@ -839,7 +841,7 @@ body {
     padding: 2%;
     width: 60%;
     height: 5vh;
-    margin-left: 20%;
+    justify-self: center;
   }
   .div1-overlay:hover .div1-1-overlay,
   .div2-overlay:hover .div2-2-overlay,
@@ -923,7 +925,6 @@ body {
   height: 14vh;
   background-color: #1f3d6b40;
   border-radius: 10px;
-  justify-self: center;
   display: flex;
   justify-content: center;
   justify-self: center;
@@ -1020,7 +1021,6 @@ body {
     width: 30%;
     height: 10vh;
     justify-self: center;
-    margin-left: 35%;
   }
   #dolor-icon i,
   #visa-icon i,
@@ -1532,6 +1532,6 @@ body {
     margin-top: -1vh;
   }
   #Newsletter label {
-    width: 80%;
+    width: 70%;
   }
 }
