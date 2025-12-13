@@ -189,24 +189,24 @@ body {
     margin-top: 65%;
     font-weight: normal;
     font-size: 3.5vw;
-    /* margin-left: 30%; */
+    margin-left: 30%;
   }
   .page-one h1 {
     font-size: 8vw;
     width: 80%;
     margin-top: 10%;
-    /* margin-left: 30%; */
+    margin-left: 30%;
   }
   .page-one p {
     width: 80%;
     font-size: 2.5vw;
     margin-top: 15%;
-    /* margin-left: 10%; */
+    margin-left: 10%;
   }
   #details button {
     width: 40%;
     margin-top: 3%;
-    /* margin-left: 40%; */
+    margin-left: 40%;
   }
 }
 /* page-two */
@@ -1421,6 +1421,12 @@ body {
 }
 #world-wide-ofices:hover #offices-img {
   transform: scale(1.1);
+}
+/* responsive page 9 */
+@media screen and(max-width:776px) {
+  #world-wide-ofices {
+    width: 100%;
+  }
 }
 /* footer */
 .footer {
