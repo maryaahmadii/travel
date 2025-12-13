@@ -189,24 +189,24 @@ body {
     margin-top: 65%;
     font-weight: normal;
     font-size: 3.5vw;
-    margin-left: 30%;
+    margin-left: 5%;
   }
   .page-one h1 {
     font-size: 8vw;
     width: 80%;
     margin-top: 10%;
-    margin-left: 30%;
+    margin-left: 2%;
   }
   .page-one p {
     width: 80%;
     font-size: 2.5vw;
     margin-top: 15%;
-    margin-left: 10%;
+    margin-left: 3%;
   }
   #details button {
     width: 40%;
     margin-top: 3%;
-    margin-left: 40%;
+    margin-left: 8%;
   }
 }
 /* page-two */
@@ -839,6 +839,7 @@ body {
     padding: 2%;
     width: 60%;
     height: 5vh;
+    margin-left: 20%;
   }
   .div1-overlay:hover .div1-1-overlay,
   .div2-overlay:hover .div2-2-overlay,
@@ -1009,7 +1010,7 @@ body {
     padding: 9%;
   }
   .cost-effective {
-    margin-left: 5%;
+    margin-left: 4%;
   }
 
   #dolor-icon,
@@ -1018,6 +1019,8 @@ body {
   #direct-icon {
     width: 30%;
     height: 10vh;
+    justify-self: center;
+    margin-left: 35%;
   }
   #dolor-icon i,
   #visa-icon i,
@@ -1426,6 +1429,7 @@ body {
 @media screen and(max-width:776px) {
   #world-wide-ofices {
     width: 100%;
+    justify-self: center;
   }
 }
 /* footer */
