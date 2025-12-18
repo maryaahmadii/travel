@@ -134,7 +134,7 @@ body {
   position: relative;
 }
 .page-one h6 {
-  margin-top: 8%;
+  margin-top: 5%;
   color: white;
   font-weight: bold;
   display: flex;
@@ -148,7 +148,7 @@ body {
   text-align: center;
   justify-self: center;
   font-family: var(--font);
-  margin-top: 3%;
+  margin-top: 0%;
   color: white;
   text-shadow: 2px 2px 2px var(--blue-dark);
 }
@@ -158,7 +158,7 @@ body {
   text-align: center;
   font-size: 1.3vw;
   justify-self: center;
-  margin-top: 6%;
+  margin-top: 0%;
   color: white;
   text-shadow: 2px 2px 2px var(--blue-dark);
   font-weight: bold;
@@ -189,7 +189,7 @@ body {
   padding: 10px;
   background-color: var(--brown);
   border-radius: 9999px;
-  margin-top: 2%;
+  margin-top: %;
   display: flex;
   font-weight: normal;
   color: white;
@@ -611,16 +611,28 @@ body {
 .div1-page4,
 .div1-page5,
 .div1-page6 {
+  /* display: flex;
+  justify-content: center; */
   display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 15px;
 }
 #first-line-right,
 #first-line-left {
+  /* color: var(--blue-dark);
+  font-weight: bolder; */
   color: var(--blue-dark);
   font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #second-line-right,
 #second-line-left {
+  /* color: var(--brown);
+  font-weight: bolder; */
+  margin-top: -8px;
   color: var(--brown);
   font-weight: bolder;
 }
@@ -630,6 +642,12 @@ body {
   color: var(--blue-dark);
   letter-spacing: 2px;
   font-weight: bold;
+}
+.details-page4 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .details-page4 h2 {
   font-size: 4.5vw;
@@ -750,6 +768,8 @@ body {
   padding: 3%;
   width: 50%;
   height: 8vh;
+  margin: 0 auto;
+  text-align: center;
   justify-self: center;
   border-radius: 9999px;
 }
