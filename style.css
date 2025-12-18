@@ -605,8 +605,14 @@ body {
   overflow: hidden;
 }
 .details-page4,
-.details-page5 {
+.details-page5,
+.details-page6,
+.details-page8 {
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .div1-page4,
 .div1-page5,
@@ -642,12 +648,6 @@ body {
   color: var(--blue-dark);
   letter-spacing: 2px;
   font-weight: bold;
-}
-.details-page4 {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .details-page4 h2 {
   font-size: 4.5vw;
