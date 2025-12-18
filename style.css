@@ -1416,9 +1416,6 @@ body {
   padding: 5%;
   height: auto;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 #world-wide-ofices {
   margin-top: 7%;
@@ -1461,6 +1458,10 @@ body {
 @media screen and(max-width:776px) {
   #world-wide-ofices {
     width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 /* footer */
