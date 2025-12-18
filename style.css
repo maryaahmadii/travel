@@ -961,7 +961,7 @@ body {
 #direct-icon i {
   font-size: 4vw;
   color: var(--blue-dark);
-  padding-top: 0;
+  padding-top: 3vh;
   transition: transform 0.5s ease;
 }
 .cost-effective:hover #dolor-icon i,
@@ -1056,6 +1056,7 @@ body {
   #processing-icon i,
   #direct-icon i {
     font-size: 9.5vw;
+    padding-top: 0;
   }
   .cost-effective h6,
   .visa-assistance h6,
@@ -1284,7 +1285,7 @@ body {
     margin-left: 2%;
   }
   .client-one em {
-    margin-top: 6vh;
+    margin-top: 7vh;
     float: left;
     margin-left: -25%;
     color: gray;
