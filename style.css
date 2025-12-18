@@ -1416,6 +1416,9 @@ body {
   padding: 5%;
   height: auto;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 #world-wide-ofices {
   margin-top: 7%;
